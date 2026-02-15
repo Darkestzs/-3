@@ -1,0 +1,28 @@
+    def __add__(self, other):
+        return Vector2D(self.x + other.x, self.y + other.y)
+
+    def __sub__(self, other):
+        return Vector2D(self.x - other.x, self.y - other.y)
+
+    def __str__(self):
+        return f"Vector({self.x}, {self.y})"
+
+    def length(self):
+        return math.sqrt(self.x ** 2 + self.y ** 2)
+
+
+# Примеры использования
+v1 = Vector2D(3, 4)
+v2 = Vector2D(1, -2)
+
+print("Сложение:")
+print(v1 + v2)
+
+print("\nВычитание:")
+print(v1 - v2)
+
+print("\nДлина вектора v1:")
+print(v1.length())
+
+print("\nСтроковое представление v1:")
+print(v1)
