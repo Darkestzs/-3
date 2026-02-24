@@ -1,0 +1,11 @@
+math = {"Анна", "Борис", "Виктор", "Дарья", "Елена"}
+physics = {"Виктор", "Георгий", "Дарья", "Иван", "Ксения"}
+cs = {"Анна", "Виктор", "Елена", "Иван", "Мария"}
+task1 = math & physics & cs
+task2 = math - (physics | cs)
+task3 = math | physics | cs
+task4 = (math & physics) | (math & cs) | (physics & cs) - task1
+print("1. Все три курса:", task1)
+print("2. Только математика:", task2)
+print("3. Все уникальные студенты:", task3)
+print("4. Ровно два курса:", task4)
